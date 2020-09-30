@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-cwiczenia';
+  tasksList: string[] = [];
+  tasksDone: string[] = [];
+
+  add(task): void {
+    this.tasksList.push(task);
+  }
+  remove(task): void {
+    this.tasksList = this.tasksList.filter(item => item !== task);
+  }
+  done(task): void {
+    this.tasksDone.push(task);
+  }
 }
