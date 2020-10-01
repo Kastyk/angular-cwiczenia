@@ -1,6 +1,6 @@
 <div>
-  <p>Liczba zrobionych tasków: {{tasksDone.length}}</p>
+  <p>Liczba zrobionych tasków: {{ tasksDone.length }}</p>
   <ul>
-    <li *ngFor="let taskDone of tasksDone">{{taskDone}}</li>
+    <li *ngFor="let taskDone of tasksDone">{{ taskDone.name }}</li>
   </ul>
 </div>

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  tasksList: string[] = [];
+ /* tasksList: string[] = [];
   tasksDone: string[] = [];
 
   add(task): void {
@@ -17,5 +17,5 @@ export class AppComponent {
   }
   done(task): void {
     this.tasksDone.push(task);
-  }
+  }*/
 }

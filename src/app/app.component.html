@@ -1,9 +1,9 @@
 <div class="to-do-app">
   <div class="container">
-    <app-add-task (taskEmitter)="add($event)"></app-add-task>
+    <app-add-task></app-add-task>
   </div>
-  <div class="container lists">
-    <app-to-do-list [tasksList]="tasksList" (emitRemove)="remove($event)" (emitDone)="done($event)"></app-to-do-list>
-    <app-done-task [tasksDone]="tasksDone"></app-done-task>
+<div class="container lists">
+    <app-to-do-list></app-to-do-list>
+    <app-done-task></app-done-task>
   </div>
 </div>
