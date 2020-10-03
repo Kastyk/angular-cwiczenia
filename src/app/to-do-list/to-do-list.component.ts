@@ -12,7 +12,8 @@ export class ToDoListComponent implements OnInit {
 
   constructor(private tasksService: TasksService) {
     this.tasksService.getTasksListOb().subscribe((tasks: Task[]) => {
-      this.tasksList = tasks;
+      // nowa lista, żeby ułatwić sortowanie przez pipe
+      this.tasksList = tasks.slice();
     });
   }
   ngOnInit(): void {}
@@ -21,6 +22,7 @@ export class ToDoListComponent implements OnInit {
     this.tasksService.remove(task);
   }
   done(task: Task): void {
+    task.end = new Date();
     this.tasksService.done(task);
     this.remove(task);
   }

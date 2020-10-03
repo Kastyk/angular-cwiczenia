@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DoneTaskComponent } from './done-task/done-task.component';
+import { CheckedDirective } from './shared/checked.directive';
+import { DateDirective } from './shared/date.directive';
+import { TransformTaskPipe } from './shared/transform-task.pipe';
+import { SortNamePipe } from './shared/sort-name.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddTaskComponent,
     ToDoListComponent,
-    DoneTaskComponent
+    DoneTaskComponent,
+    CheckedDirective,
+    DateDirective,
+    TransformTaskPipe,
+    SortNamePipe
   ],
   imports: [
     BrowserModule,
